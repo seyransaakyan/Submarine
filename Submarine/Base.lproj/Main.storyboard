@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Submarine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1614857550_11-p-fon-podvodnogo-mira-15" translatesAutoresizingMaskIntoConstraints="NO" id="XLj-aG-k34">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-Lr-apG">
+                                <rect key="frame" x="340.5" y="98.5" width="215" height="217"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwQ-hl-aad">
+                                        <rect key="frame" x="61.5" y="0.0" width="92" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5M9-IY-E6o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMh-9F-p3g">
+                                        <rect key="frame" x="0.0" y="84" width="215" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="LEADERBOARD">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leaderboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bli-U6-yux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwW-Ht-nrr">
+                                        <rect key="frame" x="35.5" y="168" width="144" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="SETTINGS">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9d-9v-PnG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XLj-aG-k34" secondAttribute="bottom" id="B0O-Su-LNt"/>
+                            <constraint firstItem="XLj-aG-k34" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BTI-MZ-ftl"/>
+                            <constraint firstItem="XLj-aG-k34" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U4S-ln-iKW"/>
+                            <constraint firstItem="XLj-aG-k34" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UNJ-U5-wiH"/>
+                            <constraint firstAttribute="bottom" secondItem="XLj-aG-k34" secondAttribute="bottom" id="Wze-OJ-eZ6"/>
+                            <constraint firstAttribute="trailing" secondItem="XLj-aG-k34" secondAttribute="trailing" id="Ykl-yu-sxT"/>
+                            <constraint firstItem="UNm-Lr-apG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGF-ma-SFs"/>
+                            <constraint firstItem="XLj-aG-k34" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b33-95-CHU"/>
+                            <constraint firstItem="UNm-Lr-apG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e6b-Ob-Xyr"/>
+                            <constraint firstAttribute="trailing" secondItem="XLj-aG-k34" secondAttribute="trailing" id="tF6-tK-apb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.65178571428569" y="71.014492753623188"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="rxY-8Q-rsR">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" id="xPo-Cu-Cf9" customClass="StartViewController" customModule="Submarine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBY-3u-5cu">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_gorizont_art_129961_2560x1080" translatesAutoresizingMaskIntoConstraints="NO" id="2x4-ez-p4T">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-lo-uEn">
+                                <rect key="frame" x="0.0" y="357" width="896" height="57"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R8D-1m-leH">
+                                <rect key="frame" x="840" y="104" width="31" height="206"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYS-ib-EjG">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="↑">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upButtonPressed:" destination="xPo-Cu-Cf9" eventType="touchUpInside" id="1ST-Kw-rxV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksp-Or-SyQ">
+                                        <rect key="frame" x="0.0" y="103" width="31" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <string key="title">↓
+</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downButtonPressed:" destination="xPo-Cu-Cf9" eventType="touchUpInside" id="rkW-MS-lPQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-submarine-finger-driver-neon-clip-art-icon-pack-5ada52db5fdf65.1449181815242574993927" translatesAutoresizingMaskIntoConstraints="NO" id="lCx-vT-sY3">
+                                <rect key="frame" x="146" y="208" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-v5-Flr">
+                                <rect key="frame" x="845" y="20" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.backward.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="xPo-Cu-Cf9" eventType="touchUpInside" id="sx5-6A-MFY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ship-2" translatesAutoresizingMaskIntoConstraints="NO" id="5Vw-yC-jv7">
+                                <rect key="frame" x="632" y="42" width="200" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ybp-9p-fdh">
+                                <rect key="frame" x="82" y="389" width="163" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.20392156859999999" green="1" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pngwing.com (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-fF-3gR">
+                                <rect key="frame" x="599" y="345" width="75" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Azl-to-Vu7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2x4-ez-p4T" firstAttribute="top" secondItem="Azl-to-Vu7" secondAttribute="top" id="B4Q-We-YME"/>
+                            <constraint firstAttribute="trailing" secondItem="R8D-1m-leH" secondAttribute="trailing" constant="25" id="Eh2-qJ-Uiq"/>
+                            <constraint firstAttribute="bottom" secondItem="2x4-ez-p4T" secondAttribute="bottom" id="PuS-bM-TLQ"/>
+                            <constraint firstItem="Vl3-lo-uEn" firstAttribute="leading" secondItem="qBY-3u-5cu" secondAttribute="leading" id="S4H-tD-hCm"/>
+                            <constraint firstAttribute="trailing" secondItem="Vl3-lo-uEn" secondAttribute="trailing" id="Xqd-ge-5BV"/>
+                            <constraint firstItem="Vl3-lo-uEn" firstAttribute="top" secondItem="qBY-3u-5cu" secondAttribute="top" constant="357" id="dLf-BC-BLE"/>
+                            <constraint firstItem="2x4-ez-p4T" firstAttribute="leading" secondItem="qBY-3u-5cu" secondAttribute="leading" id="eTh-hA-ITL"/>
+                            <constraint firstAttribute="bottom" secondItem="Vl3-lo-uEn" secondAttribute="bottom" id="fum-fb-1PJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2x4-ez-p4T" secondAttribute="trailing" id="mE3-5v-cKk"/>
+                            <constraint firstItem="Vl3-lo-uEn" firstAttribute="top" secondItem="R8D-1m-leH" secondAttribute="bottom" constant="47" id="pnk-vt-kBA"/>
+                            <constraint firstItem="R8D-1m-leH" firstAttribute="top" secondItem="Azl-to-Vu7" secondAttribute="top" constant="104" id="tBD-aS-fwc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downButton" destination="Ksp-Or-SyQ" id="gEw-Kq-oOj"/>
+                        <outlet property="oxygenBar" destination="Ybp-9p-fdh" id="5NV-EA-fWl"/>
+                        <outlet property="rockView" destination="Phi-fF-3gR" id="Qda-G3-279"/>
+                        <outlet property="sandView" destination="Vl3-lo-uEn" id="AMZ-Kc-aGF"/>
+                        <outlet property="shipView" destination="5Vw-yC-jv7" id="65d-rk-ghM"/>
+                        <outlet property="submarineView" destination="lCx-vT-sY3" id="IA3-cA-pwa"/>
+                        <outlet property="upButton" destination="vYS-ib-EjG" id="CtC-ax-5bs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUb-9R-Obf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.65178571428569" y="889.85507246376824"/>
+        </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="b3R-UW-BJP">
+            <objects>
+                <viewController storyboardIdentifier="LeaderboardViewController" id="dh3-Mc-CEy" customClass="LeaderboardViewController" customModule="Submarine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iL2-oR-Nuc">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EaX-gF-THo"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oV-ig-Err" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="891"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="itF-3M-dA0">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="x2Y-xv-CYw" customClass="SettingsViewController" customModule="Submarine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hz6-OU-rFM">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bid-4B-90R"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fp-Yo-QGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1614857550_11-p-fon-podvodnogo-mira-15" width="1920" height="1126"/>
+        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
+        <image name="kisspng-submarine-finger-driver-neon-clip-art-icon-pack-5ada52db5fdf65.1449181815242574993927" width="512" height="512"/>
+        <image name="more_gorizont_art_129961_2560x1080" width="2560" height="885"/>
+        <image name="pngwing.com (1)" width="802" height="488"/>
+        <image name="pngwing.com (2)" width="1067" height="1024"/>
+        <image name="ship-2" width="3497" height="1181"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
