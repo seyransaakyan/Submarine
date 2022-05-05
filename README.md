@@ -1,2 +1,6 @@
 # Submarine
-<a href="url"><img src="https://github.com/seyransaakyan/Submarine/blob/main/demo.gif" align="left" height="300" width="649" ></a>
+
+
+
+https://user-images.githubusercontent.com/75439628/167041201-5d4f39d8-3ab6-43ac-88d1-0f2dbbfdaa6d.mov
+
